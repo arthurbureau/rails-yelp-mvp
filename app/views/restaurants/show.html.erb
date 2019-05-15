@@ -1,0 +1,9 @@
+<h1> Fiche produit du restaurant</h1>
+
+<%= @restaurant.name %>
+<%= @restaurant.address %>
+<%= @restaurant.phone_number %>
+
+<% @restaurant.reviews.each do |review|  %>
+<%= review.content  %>
+<% end %>
